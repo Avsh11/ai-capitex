@@ -22,6 +22,14 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+
+    // Unikniecie konfliktu, wczesniej zmieniono domyslne nazwy kolumn czasowych timestamps
+
+    // created_at = creationDate, updated_at = updatedAt
+
+    const CREATED_AT = 'creationDate';
+    const UPDATED_AT = 'updatedAt';
+
     protected function casts(): array
     {
         return [
